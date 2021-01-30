@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <img src="images/" id="pic">
+
+    <script>
+
+        let n = prompt("Введите номер картинки");
+        let t = prompt("Выберите тип файла 1 (jpg) или 2 (png)");
+
+        if (n >= 1 && n <= 11 && t == 1) {
+            let myFile = `images/${n}.jpg`
+            pic.src = myFile;
+        } else if (n >= 1 && n <= 10 && t == 2) {
+            let myFile1 = `images/${n}.png`
+            pic.src = myFile1;
+        } else {
+            alert("В форммате PNG необходимый диапазон (1-10) В форммате JPG необходимый диапазон (1-11)");
+        }
+
+        
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>
